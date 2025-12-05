@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+
+    <!-- DARK MODE TOGGLE -->
+    <button id="theme-btn" class="theme-toggle">🌙 Dark Mode</button>
+
+    <!-- CATEGORY SELECTION PAGE -->
+    <div id="category-box" class="quiz-container fade-in">
+        <h2>Select Category</h2>
+
+        <!-- Categories (you can add more categories later) -->
+        <button class="category-btn" data-cat="web">Web Development</button>
+        <button class="category-btn" data-cat="javascript">JavaScript</button>
+        <!-- More categories can go here -->
+    </div>
+
+    <!-- QUIZ PAGE -->
+    <div id="quiz-box" class="quiz-container fade-in" style="display:none;">
+
+        <!-- Progress Bar -->
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <!-- Timer -->
+        <div id="timer">Time: <span id="time">15</span>s</div>
+
+        <!-- Question Text -->
+        <h2 id="question">Loading...</h2>
+
+        <!-- Options -->
+        <div id="options-container">
+            <button class="option-btn"></button>
+            <button class="option-btn"></button>
+            <button class="option-btn"></button>
+            <button class="option-btn"></button>
+        </div>
+
+        <!-- Next Button -->
+        <button id="next-btn" disabled>Next</button>
+    </div>
+
+    <!-- SCORE / RESULT PAGE -->
+    <div id="score-section" class="score-container animate" style="display:none;">
+        <h2 class="animate">Quiz Completed!</h2>
+        <p id="score"></p>
+
+        <button id="review-btn">Review Questions</button>
+        <button id="leaderboard-btn">View Leaderboard</button>
+        <button id="restart-btn">Restart Quiz</button>
+    </div>
+
+    <!-- LEADERBOARD PAGE -->
+    <div id="leaderboard" class="score-container" style="display:none;">
+        <h2>Leaderboard (Top 5 Scores)</h2>
+        <ol id="leaderboard-list"></ol>
+
+        <button onclick="location.reload()">Back</button>
+    </div>
+
+    <!-- SOUND FILES (must be inside /sounds/ folder) -->
+    <audio id="correct-sound" src="sounds/correct.mp3"></audio>
+    <audio id="wrong-sound" src="sounds/wrong.mp3"></audio>
+    <audio id="click-sound" src="sounds/click.mp3"></audio>
+
+    <!-- QUIZ LOGIC -->
+    <script src="script.js"></script>
+</body>
+</html>

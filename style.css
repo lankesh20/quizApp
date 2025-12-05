@@ -1,0 +1,295 @@
+/* ------------------ BODY & THEMES ------------------ */
+body.light {
+    background: linear-gradient(-45deg, #89f7fe, #66a6ff, #a1c4fd, #c2e9fb);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #000;
+}
+
+body.dark {
+    background: linear-gradient(-45deg, #2c3e50, #000000, #34495e, #1b1b1b);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* ------------------ QUIZ CONTAINERS ------------------ */
+.quiz-container, .score-container, .admin-box {
+    width: 350px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark .quiz-container, 
+body.dark .score-container,
+body.dark .admin-box {
+    background: #333;
+    color: #fff;
+}
+
+/* ------------------ HEADINGS ------------------ */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ------------------ PROGRESS BAR ------------------ */
+#progress-container {
+    background: #ddd;
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 8px;
+    border-radius: 20px;
+    background: #4CAF50;
+    transition: width 0.3s;
+}
+
+/* ------------------ TIMER ------------------ */
+#timer {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* ------------------ OPTION BUTTONS ------------------ */
+.option-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.option-btn:hover {
+    background: #dcdcdc;
+}
+
+.option-btn.selected {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Dark mode options */
+body.dark .option-btn {
+    background: #555;
+    color: #fff;
+}
+
+body.dark .option-btn:hover {
+    background: #777;
+}
+
+/* ------------------ BUTTONS ------------------ */
+#next-btn, #restart-btn, #review-btn, #leaderboard-btn, .category-btn, #theme-btn, #add-btn, #download-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#next-btn, #restart-btn, #review-btn, #leaderboard-btn {
+    background: #007bff;
+    color: white;
+}
+
+.category-btn {
+    background: #007bff;
+    color: white;
+}
+
+#theme-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #222;
+    color: #fff;
+}
+
+#add-btn, #download-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Dark mode buttons */
+body.dark #next-btn, body.dark #restart-btn, body.dark #review-btn, body.dark #leaderboard-btn, body.dark .category-btn {
+    background: #444;
+}
+
+body.dark #theme-btn {
+    background: #ddd;
+    color: #000;
+}
+
+/* ------------------ ANIMATIONS ------------------ */
+.animate {
+    animation: pop 0.6s ease-in-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Fade-in / Fade-out for question transitions */
+.fade-in {
+    animation: fadeIn 0.6s ease forwards;
+}
+.fade-out {
+    animation: fadeOut 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+}
+
+/* ------------------ REVIEW PAGE ------------------ */
+.review-card {
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+body.dark .review-card {
+    background: #444;
+    border-color: #666;
+}
+
+/* ------------------ LEADERBOARD PAGE ------------------ */
+#leaderboard-list {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+/* ------------------ ADMIN PANEL STYLING ------------------ */
+.admin-box {
+    width: 400px;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: background 0.5s, color 0.5s;
+}
+
+body.dark .admin-box {
+    background: #2b2b2b;
+    color: #fff;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.3s, background 0.3s, color 0.3s;
+}
+
+body.dark .form-group input,
+body.dark .form-group select {
+    background: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.options-group input {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+#add-btn, #download-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+    transition: background 0.3s;
+}
+
+#add-btn:hover, #download-btn:hover {
+    background: #45a049;
+}
+
+body.dark #add-btn, 
+body.dark #download-btn {
+    background: #3a8c3a;
+}
+
+body.dark #add-btn:hover,
+body.dark #download-btn:hover {
+    background: #2d6f2d;
+}
+
+/* Theme button */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+body.dark .theme-toggle {
+    background: #ddd;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+    .admin-box {
+        width: 90%;
+        padding: 20px;
+    }
+}

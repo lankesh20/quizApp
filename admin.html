@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+
+    <!-- DARK MODE TOGGLE -->
+    <button id="theme-btn" class="theme-toggle">🌙 Dark Mode</button>
+
+    <div class="admin-box fade-in">
+        <h2>Admin Panel — Add Questions</h2>
+
+        <!-- Category Selection -->
+        <div class="form-group">
+            <label for="category">Select Category:</label>
+            <select id="category">
+                <option value="web">Web Development</option>
+                <option value="javascript">JavaScript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="general">General Tech</option>
+            </select>
+        </div>
+
+        <!-- Question Input -->
+        <div class="form-group">
+            <input id="question" type="text" placeholder="Enter question" />
+        </div>
+
+        <!-- Options Input -->
+        <div class="form-group options-group">
+            <input id="opt1" type="text" placeholder="Option A" />
+            <input id="opt2" type="text" placeholder="Option B" />
+            <input id="opt3" type="text" placeholder="Option C" />
+            <input id="opt4" type="text" placeholder="Option D" />
+        </div>
+
+        <!-- Answer Input -->
+        <div class="form-group">
+            <input id="answer" type="number" placeholder="Correct option index (0-3)" min="0" max="3" />
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-group">
+            <button id="add-btn">Add Question</button>
+            <button id="download-btn">Download Updated questions.json</button>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

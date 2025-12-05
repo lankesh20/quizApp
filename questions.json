@@ -1,0 +1,141 @@
+{
+  "web": [
+    {
+      "question": "What does HTML stand for?",
+      "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyperlinking Text Management Language"],
+      "answer": 0
+    },
+    {
+      "question": "Which tag is used to create a hyperlink?",
+      "options": ["<link>", "<a>", "<href>", "<hyperlink>"],
+      "answer": 1
+    },
+    {
+      "question": "What is the purpose of the <head> tag?",
+      "options": ["To display content on the page", "To contain metadata and links to scripts/styles", "To define the main body", "None of the above"],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is a web development framework?",
+      "options": ["React", "Python", "C++", "Java"],
+      "answer": 0
+    },
+    {
+      "question": "What does SEO stand for?",
+      "options": ["Search Engine Optimization", "Simple Easy Option", "Systematic Engine Order", "Search Element Output"],
+      "answer": 0
+    }
+  ],
+
+  "javascript": [
+    {
+      "question": "Which type of language is JavaScript?",
+      "options": ["Scripting", "Programming", "Markup", "Styling"],
+      "answer": 0
+    },
+    {
+      "question": "Which symbol is used for comments in JavaScript?",
+      "options": ["//", "/* */", "#", "<!-- -->"],
+      "answer": 0
+    },
+    {
+      "question": "Which function converts JSON to a JavaScript object?",
+      "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.toObject()"],
+      "answer": 0
+    },
+    {
+      "question": "Which keyword is used to declare a variable in ES6?",
+      "options": ["var", "let", "const", "Both B and C"],
+      "answer": 3
+    },
+    {
+      "question": "What is the output of 'typeof null'?",
+      "options": ["object", "null", "undefined", "number"],
+      "answer": 0
+    }
+  ],
+
+  "html": [
+    {
+      "question": "Which HTML element defines the title of a document?",
+      "options": ["<title>", "<head>", "<header>", "<meta>"],
+      "answer": 0
+    },
+    {
+      "question": "Which HTML tag is used to display an image?",
+      "options": ["<image>", "<img>", "<src>", "<picture>"],
+      "answer": 1
+    },
+    {
+      "question": "Which attribute specifies the destination URL of a link?",
+      "options": ["src", "href", "link", "url"],
+      "answer": 1
+    },
+    {
+      "question": "Which tag is used for inserting a line break?",
+      "options": ["<break>", "<lb>", "<br>", "<hr>"],
+      "answer": 2
+    },
+    {
+      "question": "Which element is used to define a table row?",
+      "options": ["<tr>", "<td>", "<th>", "<table>"],
+      "answer": 0
+    }
+  ],
+
+  "css": [
+    {
+      "question": "What does CSS stand for?",
+      "options": ["Cascading Style Sheets", "Computer Style Sheets", "Creative Style System", "Colorful Style Syntax"],
+      "answer": 0
+    },
+    {
+      "question": "Which property is used to change text color?",
+      "options": ["font-color", "color", "text-color", "fgcolor"],
+      "answer": 1
+    },
+    {
+      "question": "Which property controls the element’s spacing inside the border?",
+      "options": ["margin", "padding", "border-spacing", "spacing"],
+      "answer": 1
+    },
+    {
+      "question": "Which CSS property controls the font size?",
+      "options": ["text-size", "font-style", "font-size", "size"],
+      "answer": 2
+    },
+    {
+      "question": "How do you select an element with id 'header' in CSS?",
+      "options": ["#header", ".header", "header", "*header"],
+      "answer": 0
+    }
+  ],
+
+  "general": [
+    {
+      "question": "Which company developed JavaScript?",
+      "options": ["Netscape", "Microsoft", "Google", "Apple"],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is not a programming language?",
+      "options": ["Python", "HTML", "Java", "C++"],
+      "answer": 1
+    },
+    {
+      "question": "Which protocol is used to securely browse the web?",
+      "options": ["HTTP", "FTP", "HTTPS", "SMTP"],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is a NoSQL database?",
+      "options": ["MongoDB", "MySQL", "Oracle", "PostgreSQL"],
+      "answer": 0
+    },
+    {
+      "question": "Which tool is used for version control?",
+      "options": ["Git", "Photoshop", "VS Code", "Docker"],
+      "answer": 0
+    }
+  ]
+}
